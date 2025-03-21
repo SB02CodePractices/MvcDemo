@@ -1,0 +1,12 @@
+<html>
+    <body>
+        <form action="/upload/single" method="post" enctype="multipart/form-data">
+            <input type="file" name="file">
+            <button type="submit">업로드</button>
+        </form>
+
+        <form action="/upload/multiple" method="post" enctype="multipart/form-data">
+            <input type="file" name="files" multiple>
+            <button type="submit">업로드</button>
+    </body>
+</html>
