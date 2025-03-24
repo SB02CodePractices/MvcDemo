@@ -42,7 +42,7 @@ public class FileStorageService {
 
         String lowercaseName = originalFilename.toLowerCase();
         for (String extension : allowedExtensions) {
-            if (originalFilename.endsWith(extension)) {
+            if (lowercaseName.endsWith(extension)) {
                 return true;
             }
         }
